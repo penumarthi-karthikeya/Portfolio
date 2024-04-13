@@ -30,12 +30,18 @@ lr.addEventListener('click', function() {
     if (window.innerWidth <= 500) {
         cl.scrollBy(-window.innerWidth+66, 0);
     }
+        if (window.innerWidth <= 800) {
+        cl.scrollBy(-window.innerWidth+335, 0);
+    }
 });
 rr.addEventListener('click', function() {
     clickeffect(rr)
     cl.scrollBy(500, 0);
     if (window.innerWidth <= 500) {
         cl.scrollBy(window.innerWidth-67, 0);
+    }
+        if (window.innerWidth <= 800) {
+        cl.scrollBy(window.innerWidth-335, 0);
     }
 });
 const navbar=document.getElementById('menu_icon')
