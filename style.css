@@ -56,6 +56,7 @@ body::-webkit-scrollbar {
 }
 h2{
     width:100%;
+    text-align: center;
 }
 h2 div{
     margin:10px auto;
