@@ -30,7 +30,7 @@ lr.addEventListener('click', function() {
     if (window.innerWidth <= 500) {
         cl.scrollBy(-window.innerWidth+66, 0);
     }
-    if (window.innerWidth <= 800 & window.innerWidth >= 500 ) {
+    if (window.innerWidth <= 1000 & window.innerWidth >= 500 ) {
         cl.scrollBy(-400, 0);
     }
 });
@@ -40,7 +40,7 @@ rr.addEventListener('click', function() {
     if (window.innerWidth <= 500) {
         cl.scrollBy(window.innerWidth-67, 0);
     }
-    if (window.innerWidth <= 800 & window.innerWidth >= 500 ) {
+    if (window.innerWidth <= 1000 & window.innerWidth >= 500 ) {
         cl.scrollBy(400, 0);
     }
 });
