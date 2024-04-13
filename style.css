@@ -404,7 +404,7 @@ h2 div:hover {
     display: flex;
     flex-flow: row nowrap;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:500px) {
     * {
         font-size: 1rem;
     }
