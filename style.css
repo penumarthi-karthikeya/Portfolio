@@ -203,11 +203,12 @@ h2 div:hover {
     align-items: center;
 }
 .resume_button{
+    padding:0.5rem;
     outline: none;
     border:none;
     font-size: 2rem;
     text-align: center;
-    height:50px;
+    height:max-content;
     border-radius: 10px;
     color:black;
     background-color:var(--font-color);
@@ -420,8 +421,9 @@ h2 div:hover {
     }
     .resume_button{
         font-size: 1rem;
-        height:25px;
+        height:max-content;
         border-radius: 5px;
+        padding:0.5rem;
     }
     .div_nav{
         transition: all 1s 0s ease-in-out;
