@@ -33,7 +33,6 @@ lr.addEventListener('click', function() {
     if (window.innerWidth <= 800 & window.innerWidth >= 500 ) {
         cl.scrollBy(-400, 0);
     }
-    }
 });
 rr.addEventListener('click', function() {
     clickeffect(rr)
@@ -50,4 +49,10 @@ const navlinks=document.querySelector('.div_nav')
 navbar.addEventListener('click',()=>{
     navlinks.classList.toggle('active');
     clickeffect(navlinks);
+})
+const sc=document.querySelectorAll('.social_icons')
+sc.forEach((itemz)=>{
+    itemz.addEventListener('click',()=>{
+        clickeffect(itemz)
+    })
 })
