@@ -259,6 +259,7 @@ h2 div:hover {
 }
 
 .certificates {
+    text-align: center;
     margin: 1rem 0rem;
     display: flex;
     height: max-content;
