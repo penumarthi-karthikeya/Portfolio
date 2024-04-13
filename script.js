@@ -44,9 +44,3 @@ navbar.addEventListener('click',()=>{
     navlinks.classList.toggle('active');
     clickeffect(navlinks);
 })
-const sc=document.querySelectorAll('.social_icons')
-sc.forEach((itemz)=>{
-    itemz.addEventListener('click',()=>{
-        clickeffect(itemz)
-    })
-})
