@@ -493,7 +493,7 @@ h2 div:hover {
         text-align: center;
     }
 }
-@media screen and (max-width:800px) and (min-width:500px){
+@media screen and (max-width:1000px) and (min-width:500px){
     * {
         font-size: 1rem;
     }
@@ -548,7 +548,6 @@ h2 div:hover {
     }
     .skills{
         display: flex;
-        /* flex-flow: column wrap; */
         justify-content: center;
         align-items: center;
         width:100%;
