@@ -44,8 +44,8 @@ rr.addEventListener('click', function() {
         cl.scrollBy(400, 0);
     }
 });
-const menuicon=document.getElementById('menu_icon')
-const navlinks=document.querySelector('.div_nav')
+const menuicon=document.getElementById('menu_icon');
+const navlinks=document.querySelector('.div_nav');
 menuicon.addEventListener('click',()=>{
     navlinks.classList.toggle('active');
     menubar.classList.toggle('cross_bar');
