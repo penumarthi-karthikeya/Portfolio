@@ -172,6 +172,7 @@ h2 div:hover {
         width: 35px;
         height: 5px;
         background-color: var(--font-color);
+        filter: drop-shadow(0 0 3px red);
     }
     &::after{
         bottom:0;
