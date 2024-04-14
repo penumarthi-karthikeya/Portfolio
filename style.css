@@ -144,7 +144,6 @@ h2 div:hover {
     height: 5px;
     background-color: var(--font-color);
     border-radius: 10px;
-    /* transition: all 0.5s 0s ease-in-out;  */
     &::before,&::after{
         position: absolute;
         border-radius: 10px;
@@ -160,8 +159,7 @@ h2 div:hover {
         bottom:10px;
     }
 }
-.crossbar{
-    /* transition: all 0.5s 0s ease-in-out; */
+.cross_bar{
     position: relative;
     width: 35px;
     height: 5px;
@@ -449,10 +447,8 @@ h2 div:hover {
         background-color:#00000085;
         position: absolute;
         top:70px;
-        display: block;
-        left:0;
-        animation-direction: alternate;
-        animation: mobile_navs 1s 0s ease-in-out forwards;   ;
+        left:0px;
+        display: none;
     }
     .nav_links{
         display: block;
@@ -460,8 +456,7 @@ h2 div:hover {
         text-align: center;
     }
     .active{
-        animation-direction: alternate;
-        animation: mobile_nav 1s 0s ease-in-out forwards   ;
+        animation: mobile_nav 1s 0s ease-in-out backwards;
         display: block !important;
     }
     @keyframes mobile_nav{
@@ -470,14 +465,6 @@ h2 div:hover {
         }
         100%{
             transform: translateX(0);
-        }
-    }
-    @keyframes mobile_navs{
-        0%{
-            transform: translateX(0%);
-        }
-        100%{
-            transform: translateX(100%);
         }
     }
     .menu_icon{
@@ -578,7 +565,6 @@ h2 div:hover {
     }
     .skills{
         display: flex;
-        /* flex-flow: column wrap; */
         justify-content: center;
         align-items: center;
         width:100%;
