@@ -49,7 +49,13 @@ const navlinks=document.querySelector('.div_nav')
 const menubar=document.getElementById('menu_bar')
 menuicon.addEventListener('click',()=>{
     navlinks.classList.toggle('active');
-    menubar.classList.toggle('crossbar');
+    menubar.classList.toggle('cross_bar');
     menubar.classList.toggle('menu_bar');
     clickeffect(navlinks);
+})
+const sc=document.querySelectorAll('.social_icons')
+sc.forEach((itemz)=>{
+    itemz.addEventListener('click',()=>{
+        clickeffect(itemz)
+    })
 })
