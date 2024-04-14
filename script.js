@@ -50,7 +50,6 @@ const menubar=document.getElementById('menu_bar')
 menuicon.addEventListener('click',()=>{
     navlinks.classList.toggle('active');
     menubar.classList.toggle('cross_bar');
-    menubar.classList.toggle('menu_bar');
     clickeffect(navlinks);
 })
 const sc=document.querySelectorAll('.social_icons')
