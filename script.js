@@ -46,15 +46,9 @@ rr.addEventListener('click', function() {
 });
 const menuicon=document.getElementById('menu_icon')
 const navlinks=document.querySelector('.div_nav')
-const menubar=document.getElementById('menu_bar')
 menuicon.addEventListener('click',()=>{
     navlinks.classList.toggle('active');
     menubar.classList.toggle('cross_bar');
     clickeffect(navlinks);
-})
-const sc=document.querySelectorAll('.social_icons')
-sc.forEach((itemz)=>{
-    itemz.addEventListener('click',()=>{
-        clickeffect(itemz)
-    })
+    document.getElementById('menu_bar').classList.toggle('cross_bar');
 })
