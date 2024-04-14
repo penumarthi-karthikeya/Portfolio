@@ -76,9 +76,10 @@ document.addEventListener('keydown', function(event) {
     }
 });
 if (window.innerWidth <= 500) {
-let sections = document.querySelectorAll('section');
-let currentSectionIndex = 0;
-document.addEventListener('dblclick', function() {
-    currentSectionIndex = (currentSectionIndex + 1) % sections.length;
-    sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' });
-})};
+    let sections = document.querySelectorAll('section');
+    let currentSectionIndex = 0;
+    document.addEventListener('dblclick', function() {
+        currentSectionIndex = (currentSectionIndex + 1) % sections.length;
+        sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' });
+    })
+};
