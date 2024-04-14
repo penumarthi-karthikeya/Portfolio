@@ -51,3 +51,34 @@ menuicon.addEventListener('click',()=>{
     clickeffect(navlinks);
     document.getElementById('menu_bar').classList.toggle('cross_bar');
 })
+document.addEventListener('keydown', function(event) {
+    if (event.altKey){
+        var sectionId = '';
+        switch(event.key) {
+            case 'h':
+                sectionId = 'home';
+                break;
+            case 'a':
+                sectionId = 'about';
+                break;
+            case 'p':
+                sectionId = 'projects';
+                break;
+            case 'c':
+                sectionId = 'contact';
+                break;
+            default:
+                return;
+        }
+        if (sectionId) {
+            window.location.hash = '#' + sectionId;
+        }
+    }
+});
+let sections = document.querySelectorAll('section');
+let currentSectionIndex = 0;
+
+document.addEventListener('dblclick', function() {
+    currentSectionIndex = (currentSectionIndex + 1) % sections.length;
+    sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' });
+});
