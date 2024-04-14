@@ -48,7 +48,6 @@ const menuicon=document.getElementById('menu_icon');
 const navlinks=document.querySelector('.div_nav');
 menuicon.addEventListener('click',()=>{
     navlinks.classList.toggle('active');
-    menubar.classList.toggle('cross_bar');
     clickeffect(navlinks);
     document.getElementById('menu_bar').classList.toggle('cross_bar');
 })
