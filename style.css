@@ -56,7 +56,6 @@ body::-webkit-scrollbar {
 }
 h2{
     width:100%;
-    text-align: center;
 }
 h2 div{
     margin:10px auto;
@@ -136,14 +135,36 @@ h2 div:hover {
 
 .menu_icon {
     display: none;
+    position: relative;
 }
-
 .menu_bar {
     position: relative;
     content: " ";
     width: 35px;
     height: 5px;
     background-color: var(--font-color);
+    border-radius: 10px;
+    /* transition: all 0.5s 0s ease-in-out;  */
+    &::before,&::after{
+        position: absolute;
+        border-radius: 10px;
+        content: " ";
+        width: 35px;
+        height: 5px;
+        background-color: var(--font-color);
+    }
+    &::after{
+        top:10px;
+    }
+    &::before{
+        bottom:10px;
+    }
+}
+.crossbar{
+    /* transition: all 0.5s 0s ease-in-out; */
+    position: relative;
+    width: 35px;
+    height: 5px;
     border-radius: 10px;
     &::before,&::after{
         position: absolute;
@@ -154,10 +175,10 @@ h2 div:hover {
         background-color: var(--font-color);
     }
     &::after{
-        bottom:10px;
+        transform: rotate(-45deg);
     }
     &::before{
-        top:10px;
+        transform: rotate(45deg);
     }
 }
 .main_element {
@@ -259,9 +280,7 @@ h2 div:hover {
     color: var(--highlight_color);
     font-weight: 900;
 }
-
 .certificates {
-    text-align: center;
     margin: 1rem 0rem;
     display: flex;
     height: max-content;
@@ -421,19 +440,19 @@ h2 div:hover {
     }
     .resume_button{
         font-size: 1rem;
+        padding: 0.5rem;
         height:max-content;
         border-radius: 5px;
-        padding:0.5rem;
     }
     .div_nav{
         transition: all 1s 0s ease-in-out;
         background-color:#00000085;
         position: absolute;
         top:70px;
-        display: none;
-        z-index:-1000 !important;
+        display: block;
         left:0;
-        animation: mobile_nav 1s 0s ease-in-out both;
+        animation-direction: alternate;
+        animation: mobile_navs 1s 0s ease-in-out forwards;   ;
     }
     .nav_links{
         display: block;
@@ -441,6 +460,8 @@ h2 div:hover {
         text-align: center;
     }
     .active{
+        animation-direction: alternate;
+        animation: mobile_nav 1s 0s ease-in-out forwards   ;
         display: block !important;
     }
     @keyframes mobile_nav{
@@ -449,6 +470,14 @@ h2 div:hover {
         }
         100%{
             transform: translateX(0);
+        }
+    }
+    @keyframes mobile_navs{
+        0%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(100%);
         }
     }
     .menu_icon{
@@ -503,9 +532,10 @@ h2 div:hover {
     .home_image {
         width: 300px;
         height: 400px;
+        padding-left: 1rem;
     }
     .homes{
-        flex-flow: column nowrap;
+        /* flex-flow: column nowrap; */
         text-align: center;
     }
     .resume_button{
@@ -548,6 +578,7 @@ h2 div:hover {
     }
     .skills{
         display: flex;
+        /* flex-flow: column wrap; */
         justify-content: center;
         align-items: center;
         width:100%;
