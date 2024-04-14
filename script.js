@@ -44,15 +44,12 @@ rr.addEventListener('click', function() {
         cl.scrollBy(400, 0);
     }
 });
-const navbar=document.getElementById('menu_icon')
+const menuicon=document.getElementById('menu_icon')
 const navlinks=document.querySelector('.div_nav')
-navbar.addEventListener('click',()=>{
+const menubar=document.getElementById('menu_bar')
+menuicon.addEventListener('click',()=>{
     navlinks.classList.toggle('active');
+    menubar.classList.toggle('crossbar');
+    menubar.classList.toggle('menu_bar');
     clickeffect(navlinks);
-})
-const sc=document.querySelectorAll('.social_icons')
-sc.forEach((itemz)=>{
-    itemz.addEventListener('click',()=>{
-        clickeffect(itemz)
-    })
 })
