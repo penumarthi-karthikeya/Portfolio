@@ -153,10 +153,10 @@ h2 div:hover {
         background-color: var(--font-color);
     }
     &::after{
-        top:10px;
+        bottom:10px;
     }
     &::before{
-        bottom:10px;
+        top:10px;
     }
 }
 .cross_bar{
@@ -164,6 +164,7 @@ h2 div:hover {
     width: 35px;
     height: 5px;
     border-radius: 10px;
+    background-color: transparent;
     &::before,&::after{
         position: absolute;
         border-radius: 10px;
@@ -173,9 +174,11 @@ h2 div:hover {
         background-color: var(--font-color);
     }
     &::after{
+        bottom:0;
         transform: rotate(-45deg);
     }
     &::before{
+        top:0;
         transform: rotate(45deg);
     }
 }
@@ -565,6 +568,7 @@ h2 div:hover {
     }
     .skills{
         display: flex;
+        /* flex-flow: column wrap; */
         justify-content: center;
         align-items: center;
         width:100%;
