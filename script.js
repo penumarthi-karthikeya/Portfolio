@@ -83,3 +83,7 @@ if (window.innerWidth <= 500) {
         sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' });
     })
 };
+let logo=document.getElementById("logo");
+logo.addEventListener('click',function(){
+    window.location.hash='#home';
+})
