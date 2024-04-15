@@ -5,7 +5,7 @@
 }
 html {
     scroll-behavior: smooth;
-    user-select: none;
+
 }
 :root {
     --font-color: #EEEDED;
@@ -326,7 +326,7 @@ h2 div:hover {
     z-index: 2;
     scroll-behavior: smooth;
     overflow-x: scroll;
-
+    user-select: none;
     &::-webkit-scrollbar {
         display: none;
     }
